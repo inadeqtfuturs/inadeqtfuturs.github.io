@@ -1,0 +1,104 @@
+/* if stylesheet */
+@charset "UTF-8";
+
+a {color:#333;}
+a:hover {color:#333;opacity:.7;}
+body{font-weight:100;min-width:20em;}
+ul,li{list-style:none;}
+.wrap .measure {margin:0 auto;}
+.h1,h1,.h2,h2,.h3,h3,.h4,h4,ul,li {font-family:"Lato", 'Helvetica Neue';font-weight:100;line-height:1.2em;}
+.p,p{font-family:"Georgia";}
+
+/* header */
+.flex {display:flex;justify-content:space-between;align-items:baseline;}
+.site-title {font-size:2.5rem;font-weight:100;letter-spacing:.03em;}
+.site-nav {position:relative;display:inline-block;padding-left:0;margin-bottom:0}
+.site-nav li {font-family:"Georgia";float:left;margin-left:1em;position:relative;text-align:left;}
+.site-nav li:first-child {margin-left:0;}
+.site-nav a:hover {opacity:1;box-shadow:0 1.5px 0 0 currentColor;}
+.site-nav .icons:hover {opacity:.7;box-shadow:0 0 0 0;}
+.site-nav ul {display:none;padding:0;position:absolute;top:100%;white-space:nowrap;}
+.site-nav li:hover > ul {display:block;position:absolute;}
+.site-nav ul li {float:none;position:relative;margin-left:0;clear: both}
+
+/* main post */
+.post div {display:block;}
+.post-info {width:30%;}
+.post-info p {margin:0;}
+.post-info h2:hover {opacity:.7;}
+.post-index {width:65%}
+.post-index img {display:none;}
+.post-summary,.post-meta {margin-bottom:0;}
+.post-author,.post-meta,.read-more{font-family:"Georgia";font-weight:200;color:#000;font-style:italic;}
+.read-more {margin-bottom:1em;}
+.post-content a,.post-index a {border-bottom:1px solid #444}
+.post-content a:hover,.post-index a:hover {box-shadow:0 1px 0 0 currentColor;opacity:1}
+.post-meta a {border-bottom: none;}
+.post-meta a:hover {box-shadow:none;opacity:.7;}
+
+/* single post */
+.post-header .h2,h2{margin-bottom:.333rem;}
+.blog-scroll {margin-top:.666em;width:100%;border-top:thin solid #000;}
+.blog-scroll p {margin-bottom:0;}
+.blog-scroll .left {padding-top:.333em;float:left;width:50%}
+.blog-scroll .right {padding-top:.333em;float:left;text-align:right;width:50%}
+
+/* pagination */
+.pagination a {transition:all .5s ease-in-out;border:1px solid #a0a0a0;color:#000;padding:1em 3em;font-weight:300;}
+.pagination a:hover,.pagination a:focus{color:#000;border:1px solid black;opacity:1;}
+.disabled {color:white;}
+
+article {overflow: auto;}
+.cover,.wide {float:right;padding-left:1em;display: inline;}
+.about-profile {width:30em;height:auto}
+.full {width:100%;}
+
+/* cv */
+.cv-header{text-align:center}
+.cv-section li,.cv-section a {font-size:.75rem;list-style-type:none}
+.cv-section h2 {font-variant:small-caps;font-size:1.2rem;margin-bottom:0}
+.cv-section hr {margin-top:0;margin-bottom:0}
+.cv-section ul ul {margin-bottom:0}
+.cv-section li {font-size:.8rem}
+
+/* footer */
+.footer p {font-family:"Lato"}
+.footer .wrap {padding-top:0;}
+.footer-left .navbar-search {text-align: left;}
+.footer-left .search-query {border-width:0;border-bottom:1px solid #666;width:15em;max-width:100%;font-style:italic;}
+.footer-left .search-query:focus {outline:0;box-shadow:0 1px}
+.footer-right {float:left;text-align:left;display:block;width:40%;}
+.footer-right ul {list-style:none;margin:0;padding-bottom:1em;padding-left:0}
+.footer-right ul li {position:relative;}
+.footer-right ul li a{background-color:#fff;padding-right:.5em;}
+.footer-right ul li a:after {border-bottom:1px dotted;content:"";display:inline-block;position:absolute;left:0;top:11px;width:100%;z-index:-1}
+
+/* responsive */
+@media screen and (min-width:48em){
+  .posts .post {margin-bottom:.333em;padding-bottom:.333em;border-bottom:thin solid #000}
+  .posts .post:last-child {border-bottom:0;margin-bottom:.333em;padding-bottom:0.333em;border-bottom:thin solid #000}
+  .h2,h2{font-size:1.5rem}
+  .h3,h3{font-size:1.625rem}
+  .h4,h4{font-size:.75rem;margin-bottom:.333rem;}
+  .p,p,li,a{font-size:.9rem;line-height:1.5}
+  .cv {width:80%;padding-left:10%}
+  .cover {width:20em;}
+  .wide {width:30em;}
+}
+
+@media screen and (max-width:48em){
+  .measure.flex {display:block;text-align:center;}
+  .post-info {margin-bottom:1rem;width:100%;}
+  .post-index {width:100%;}
+  .posts .post {margin-bottom:.666em;padding-bottom:.666em;border-bottom:thin solid #000}
+  .posts .post:last-child {border-bottom:0;margin-bottom:.666em;padding-bottom:0.666em;border-bottom:thin solid #000}
+  .h2,h2{font-size:1.2rem}
+  .h3,h3{font-size:1.4rem}
+  .h4,h4{font-size:.75rem;margin-bottom:.333rem;}
+  .p,p,li,a{font-size:.85rem;line-height:1.5}
+  .pagination a {padding:1em 1em;}
+  .footer .measure.flex {display:flex;text-align:left;}
+  .footer-left {width:40%;}
+  .cover {width:10em;}
+  .wide {width:18em;}
+}

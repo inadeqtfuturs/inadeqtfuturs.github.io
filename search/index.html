@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>search - inadequate futures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="inadequate futures">
+  <meta name="author" content="alex christie">
+  <meta name="keywords" content="critical theory, posthumanism, new materialism">
+  <link rel="canonical" href="https://inadeqtfuturs.github.io/search/">
+  <link rel="shortcut icon" href="https://inadeqtfuturs.github.io/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="https://inadeqtfuturs.github.io/css/basscss.css" />
+  <link rel="stylesheet" type="text/css" href="https://inadeqtfuturs.github.io/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@inadeqt_futurs">
+  <meta name="twitter:domain" content="deqtfuturs.github.io">
+  <meta name="twitter:title" content="search"/>
+  <meta name="twitter:description" content="     $(document).ready(function() { $(&#39;#tipue_search_input&#39;).tipuesearch({ &#39;mode&#39; : &#39;json&#39;, &#39;show&#39;: 10, &#39;contentLocation&#39;: &#39;{{ .Site.BaseURL }}/tipuesearch_content.json&#39; }); });     " />
+  <meta name="twitter:image:src" content="https://inadeqtfuturs.github.io/images/profile.jpg"/>
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure flex">
+      <a href="https://inadeqtfuturs.github.io" class="site-title">inadequate futures</a>
+      <nav class="">
+      <ul class="site-nav">
+  <li><a href="https://inadeqtfuturs.github.io/">home</a></li>
+  <li><a href="https://inadeqtfuturs.github.io/about/">about</a></li>
+  <li><a href="https://inadeqtfuturs.github.io/teaching/">teaching <i class="fas fa-angle-down"></i></a>
+    <ul>
+      <li><a href="https://inadeqtfuturs.github.io/teaching/">teaching philosophy</a></li>
+      <li><a href="https://inadeqtfuturs.github.io/classes/">course descriptions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://inadeqtfuturs.github.io/cv/">cv</a></li>
+  <li><a href="https://twitter.com/inadeqt_futurs" class="icons"><i class="fab fa-twitter fa-lg"></i></a></li>
+  <li><a href="https://www.instagram.com/inadeqt_futrs/" class="icons"><i class="fab fa-instagram fa-lg"></i></a></li>
+</ul>
+
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h2 class="py0">search</h2>
+      </div>
+
+      <article class="post-content">
+      <div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}/js/tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}/js/tipuesearch/tipuesearch.min.js"></script>
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch({
+         'mode' : 'json',
+         'show': 10,
+         'contentLocation': '{{ .Site.BaseURL }}/tipuesearch_content.json'
+     });
+});
+</script>
+<div class="span8 offset2">
+    <div id="tipue_search_content"><div id="tipue_search_loading"></div>
+</div>
+</div>
+
+      </article>
+    </div>
+  </div>
+</div>
+<footer class="footer px2 px-responsive">
+<div class="mb2 wrap">
+  <div class="measure flex">
+    <div class="footer-left">
+      <p>search</p>
+      <form class="navbar-search" action="https://inadeqtfuturs.github.io/search/index.html">
+          <input type="text" class="search-query" placeholder="search..." name="q" id="tipue_search_input">
+      </form>
+      <p></p>
+    </div>
+    <div class="footer-right">
+      <p>archive</p>
+      <div class="archive">
+        <ul>
+          <li><a href="https://inadeqtfuturs.github.io/archives/#2018/">2018</a></li>
+          <li><a href="https://inadeqtfuturs.github.io/archives/#2017">2017</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
+</body>
+</html>
+
