@@ -192,7 +192,7 @@ Juliana Spahr&amp;rsquo;s &lt;i&gt;That Winter the Wolf Came&lt;/i&gt; offers so
       <pubDate>Thu, 12 Jan 2017 12:00:18 -0600</pubDate>
       
       <guid>https://inadeqtfuturs.github.io/search/</guid>
-      <description>     $(document).ready(function() { $(&#39;#tipue_search_input&#39;).tipuesearch({ &#39;mode&#39; : &#39;json&#39;, &#39;show&#39;: 10, &#39;contentLocation&#39;: &#39;{{ .Site.BaseURL }}/tipuesearch_content.json&#39; }); });     </description>
+      <description>     $(document).ready(function() { $(&#39;#tipue_search_input&#39;).tipuesearch({ &#39;mode&#39; : &#39;json&#39;, &#39;show&#39;: 10, &#39;contentLocation&#39;: &#39;/tipuesearch_content.json&#39; }); });     </description>
     </item>
     
   </channel>
