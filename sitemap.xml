@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://inadeqtfuturs.github.io/post/012-mla19-cfp/</loc>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://inadeqtfuturs.github.io/post/011-spring-writing-class/</loc>
     <lastmod>2018-01-16T18:14:39-06:00</lastmod>
   </url>
@@ -126,6 +131,12 @@
   </url>
   
   <url>
+    <loc>https://inadeqtfuturs.github.io/tags/conferences/</loc>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://inadeqtfuturs.github.io/tags/contemporary/</loc>
     <lastmod>2018-01-16T18:14:39-06:00</lastmod>
     <priority>0</priority>
@@ -174,6 +185,12 @@
   </url>
   
   <url>
+    <loc>https://inadeqtfuturs.github.io/tags/humanities/</loc>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://inadeqtfuturs.github.io/tags/hyperrealism/</loc>
     <lastmod>2017-05-08T08:40:10-06:00</lastmod>
     <priority>0</priority>
@@ -188,6 +205,12 @@
   <url>
     <loc>https://inadeqtfuturs.github.io/tags/mccarthy/</loc>
     <lastmod>2017-05-20T12:06:04-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inadeqtfuturs.github.io/tags/mla/</loc>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -223,7 +246,7 @@
   
   <url>
     <loc>https://inadeqtfuturs.github.io/post/</loc>
-    <lastmod>2018-01-16T18:14:39-06:00</lastmod>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -289,19 +312,19 @@
   
   <url>
     <loc>https://inadeqtfuturs.github.io/tags/theory/</loc>
-    <lastmod>2018-01-04T17:49:11-06:00</lastmod>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://inadeqtfuturs.github.io/tags/writing/</loc>
-    <lastmod>2018-01-16T18:14:39-06:00</lastmod>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://inadeqtfuturs.github.io/</loc>
-    <lastmod>2018-01-16T18:14:39-06:00</lastmod>
+    <lastmod>2018-03-05T05:01:27-06:00</lastmod>
     <priority>0</priority>
   </url>
   

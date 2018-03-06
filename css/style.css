@@ -7,7 +7,7 @@ body{font-weight:100;min-width:20em;}
 ul,li{list-style:none;}
 .wrap .measure {margin:0 auto;}
 .h1,h1,.h2,h2,.h3,h3,.h4,h4,ul,li {font-family:"Lato", 'Helvetica Neue';font-weight:100;line-height:1.2em;}
-.p,p{font-family:"Georgia";}
+.p,p,article li{font-family:"Georgia";}
 
 /* header */
 .flex {display:flex;justify-content:space-between;align-items:baseline;}
@@ -43,6 +43,11 @@ ul,li{list-style:none;}
 .blog-scroll .left {padding-top:.333em;float:left;width:50%}
 .blog-scroll .right {padding-top:.333em;float:left;text-align:right;width:50%}
 
+/* syllabus */
+.syllabus li,td {font-family:"Georgia";font-weight:200;color:#000;}
+.syllabus td {vertical-align:top;padding:0;}
+.syllabus-table {width:10em;}
+
 /* pagination */
 .pagination a {transition:all .5s ease-in-out;border:1px solid #a0a0a0;color:#000;padding:1em 3em;font-weight:300;}
 .pagination a:hover,.pagination a:focus{color:#000;border:1px solid black;opacity:1;}
@@ -55,7 +60,7 @@ article {overflow: auto;}
 
 /* cv */
 .cv-header{text-align:center}
-.cv-section li,.cv-section a {font-size:.75rem;list-style-type:none}
+.cv-section li,.cv-section a {font-size:.8rem;list-style-type:none}
 .cv-section h2 {font-variant:small-caps;font-size:1.2rem;margin-bottom:0}
 .cv-section hr {margin-top:0;margin-bottom:0}
 .cv-section ul ul {margin-bottom:0}
@@ -80,7 +85,7 @@ article {overflow: auto;}
   .h2,h2{font-size:1.5rem}
   .h3,h3{font-size:1.625rem}
   .h4,h4{font-size:.75rem;margin-bottom:.333rem;}
-  .p,p,li,a{font-size:.9rem;line-height:1.5}
+  .p,p,li,a,td{font-size:.9rem;line-height:1.5}
   .cv {width:80%;padding-left:10%}
   .cover {width:20em;}
   .wide {width:30em;}
@@ -99,6 +104,8 @@ article {overflow: auto;}
   .pagination a {padding:1em 1em;}
   .footer .measure.flex {display:flex;text-align:left;}
   .footer-left {width:40%;}
+  .syllabus li,.syllabus td,.syllabus a{font-size:.85rem;line-height:1.5}
+  .syllabus-table{width:9em;}
   .cover {width:10em;}
   .wide {width:18em;}
 }
