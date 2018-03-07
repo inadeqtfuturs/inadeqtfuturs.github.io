@@ -70,8 +70,8 @@ article {overflow: auto;}
 .footer p {font-family:"Lato"}
 .footer .wrap {padding-top:0;}
 .footer-left .navbar-search {text-align: left;}
-.footer-left .search-query {border-width:0;border-bottom:1px solid #666;width:15em;max-width:100%;font-style:italic;}
-.footer-left .search-query:focus {outline:0;box-shadow:0 1px}
+.search-query {border-width:0;border-bottom:1px solid #666;width:15em;max-width:100%;font-style:italic;}
+.search-query:focus {outline:0;box-shadow:0 1px}
 .footer-right {float:left;text-align:left;display:block;width:40%;}
 .footer-right ul {list-style:none;margin:0;padding-bottom:1em;padding-left:0}
 .footer-right ul li {position:relative;}
