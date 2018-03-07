@@ -54,6 +54,7 @@ ul,li{list-style:none;}
 .disabled {color:white;}
 
 article {overflow: auto;}
+article li {list-style:disc;}
 .cover,.wide {float:right;padding-left:1em;display: inline;}
 .about-profile {width:30em;height:auto}
 .full {width:100%;}
