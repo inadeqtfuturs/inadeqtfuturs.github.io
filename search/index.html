@@ -102,17 +102,6 @@
           });
   }
 
-  function initUI() {
-    $results = $("#results");
-    if (query.length < 3) {
-      return;
-    }
-
-    var results = search(query);
-
-    renderResults(results);
-  }
-
   function search(query) {
       return lunrIndex.search(query).map(function(result) {
               return pagesIndex.filter(function(page) {
@@ -136,9 +125,19 @@
     });
   }
 
+
+  function initUI() {
+    $results = $("#results");
+    if (query.length < 3) {
+      return;
+    }
+    var results = search(query);
+
+    renderResults(results);
+  }
+
   
   initLunr();
-
   $(document).ready(function() {
     initUI();
   });
