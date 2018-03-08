@@ -73,7 +73,7 @@
     <div class="footer-left">
       <p>search</p>
       <form class="navbar-search" action="https://inadeqtfuturs.github.io/search/index.html"
-          onsubmit="return validateForm(this.elements['q'].value);">
+          method="get">
           <input type="text" class="search-query" placeholder="search..." name="q">
       </form>
       <p></p>
@@ -91,19 +91,19 @@
 </div>
 </footer>
 <script>
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('/sw.js', { scope: '/' })
-            .then(function(registration) {
-                console.log('Service Worker Registered');
-            });
-
-        navigator.serviceWorker
-            .ready
-            .then(function(registration) {
-                console.log('Service Worker Ready');
-            });
-    }
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+      }).catch(function(err) {
+        console.log(err)
+      });
+    });
+  } else {
+    console.log('service worker is not supported');
+  }
 </script>
 </body>
 </html>
