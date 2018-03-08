@@ -76,7 +76,7 @@
     }
   }
 
-  var searchTerm = getQueryVariable('q');
+  var query = getQueryVariable('q');
 
   
   function initLunr() {
@@ -104,11 +104,11 @@
 
   function initUI() {
     $results = $("#results");
-    if (searchTerm.length < 3) {
+    if (query.length < 3) {
       return;
     }
 
-    var results = search(searchTerm);
+    var results = search(query);
 
     renderResults(results);
   }
