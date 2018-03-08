@@ -102,8 +102,8 @@
           });
   }
 
-  function search(term) {
-      return lunrIndex.search(term).map(function(result) {
+  function search(query) {
+      return lunrIndex.search(query).map(function(result) {
               return pagesIndex.filter(function(page) {
                   return page.uri === result.ref;
               })[0];
@@ -126,18 +126,16 @@
   }
 
 
-  function initUI() {
+
+
+  
+  initLunr();
+  $(document).ready(function() {
     $results = $("#results");
     if (query.length < 3) {
       return;
     }
     renderResults(search(query));
-  }
-
-  
-  initLunr();
-  $(document).ready(function() {
-    initUI();
   });
 </script>
 
