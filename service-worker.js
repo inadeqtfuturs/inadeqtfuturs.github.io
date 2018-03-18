@@ -1,4 +1,4 @@
-var doCache = true;
+var doCache = false;
 var CACHE_NAME = 'pwa-app-cache';
 // Delete old caches
 self.addEventListener('activate', event => {
@@ -29,7 +29,7 @@ self.addEventListener('install', function(event) {
               // We could also cache assets like CSS and images
               const urlsToCache = [
                 '/',
-                '/css/style.css',
+                '/css/style.css'
               ];
               cache.addAll(urlsToCache);
             })
