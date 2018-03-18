@@ -1,43 +1,42 @@
+// Set this to true for production
 var doCache = false;
-var CACHE_NAME = 'pwa-app-cache';
-// Delete old caches
-self.addEventListener('activate', event => {
-  const currentCachelist = [CACHE_NAME];
+
+// Name our cache
+var CACHE_NAME = 'if-cache';
+
+// delete old caches that are not our current one.
+self.addEventListener("activate", event => {
+  const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
     caches.keys()
       .then(keyList =>
         Promise.all(keyList.map(key => {
-          if (!currentCachelist.includes(key)) {
+          if (!cacheWhitelist.includes(key)) {
+            console.log('Deleting cache: ' + key)
             return caches.delete(key);
           }
         }))
       )
   );
 });
-// This triggers when user starts the app
+
+var urlsToCache = [
+  '/',
+  '/css/style.css',
+];
+
+// first time user starts website, 'install' is triggered
 self.addEventListener('install', function(event) {
   if (doCache) {
     event.waitUntil(
       caches.open(CACHE_NAME)
         .then(function(cache) {
-          fetch('manifest.json')
-            .then(response => {
-              response.json();
-            })
-            .then(assets => {
-              // We will cache initial page and the main.js
-              // We could also cache assets like CSS and images
-              const urlsToCache = [
-                '/',
-                '/css/style.css'
-              ];
-              cache.addAll(urlsToCache);
-            })
+          return cache.addAll(urlsToCache);
         })
     );
   }
 });
-// Here we intercept request and serve up the matching files
+
 self.addEventListener('fetch', function(event) {
   if (doCache) {
     event.respondWith(
