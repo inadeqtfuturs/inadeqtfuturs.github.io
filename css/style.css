@@ -3,7 +3,7 @@
 
 a {color:#444;}
 a:hover {color:#444;opacity:.7;}
-body{font-weight:100;min-width:20em;}
+body{font-weight:100;min-width:365px;}
 ul,li{list-style:none;}
 .wrap .measure {margin:0 auto;}
 .h1,h1,.h2,h2,.h3,h3,.h4,h4,ul,li {font-family:"Lato", 'Helvetica Neue';font-weight:100;line-height:1.2em;}
