@@ -1,4 +1,4 @@
-var doCache = false;
+var doCache = true;
 var CACHE_NAME = 'pwa-app-cache';
 // Delete old caches
 self.addEventListener('activate', event => {
